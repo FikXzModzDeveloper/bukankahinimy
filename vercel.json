@@ -1,7 +1,7 @@
 {
   "outputDirectory": ".",
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" },
-    { "src": "/bahlil", "dest": "/public/lonte.mp3" }
+    { "src": "/bahlil", "dest": "/public/lonte.mp3" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
