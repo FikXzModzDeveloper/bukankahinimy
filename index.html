@@ -34,20 +34,20 @@
 </head>
 <body>
   <div id="root"></div>
-  <audio id="snd" src="/bahlil" preload="auto"></audio>
+  <audio id="entot" src="/bahlil" preload="auto"></audio>
   <script type="text/babel">
     const { useEffect } = React;
-    const App = () => {
+    const Aduhh = () => {
       useEffect(() => {
-        const once = () => {
-          document.getElementById('snd').play();
-          document.removeEventListener('click', once);
+        const berak = () => {
+          document.getElementById('entot').play();
+          document.removeEventListener('click', berak);
         };
-        document.addEventListener('click', once);
+        document.addEventListener('click', berak);
       }, []);
       return <strong>my apa emangnyaa? my telkomsel? my bahlil?</strong>;
     };
-    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    ReactDOM.createRoot(document.getElementById('root')).render(<Aduhh />);
   </script>
 </body>
 </html>
