@@ -5,30 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="my apa emg ny?">
   <meta name="theme-color" content="#111">
-  <title>biar apa?? biarin?</title>
+  <title>My Apa Emg Ny?</title>
   <link rel="icon" href="data:,">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <style>
-    html,body{margin:0;height:100%;background:#111;color:#fff;font-family:'Inter',system-ui;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-    strong{font-size:2.5rem;letter-spacing:.5px;text-shadow:0 0 8px rgba(255,255,255,.15),0 0 2px rgba(255,255,255,.25);opacity:.82}
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #111;
+      color: #fff;
+      font-family: 'Inter', system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    strong {
+      font-size: 2.5rem;
+      letter-spacing: .5px;
+      text-shadow: 0 0 8px rgba(255,255,255,.15), 0 0 2px rgba(255,255,255,.25);
+      opacity: .82;
+    }
   </style>
 </head>
 <body>
   <div id="root"></div>
   <audio id="snd" src="/lonte.mp3" preload="auto"></audio>
   <script type="text/babel">
-    const {useEffect}=React;
-    const App=()=>{
-      useEffect(()=>{
-        const once=()=>{document.getElementById('snd').play();document.removeEventListener('click',once)};
-        document.addEventListener('click',once);
-      },[]);
+    const { useEffect } = React;
+    const App = () => {
+      useEffect(() => {
+        const once = () => {
+          document.getElementById('snd').play();
+          document.removeEventListener('click', once);
+        };
+        document.addEventListener('click', once);
+      }, []);
       return <strong>my apa emg ny? my telkomsel? my bahlil?😂</strong>;
     };
-    ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
   </script>
 </body>
 </html>
